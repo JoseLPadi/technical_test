@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextViewProjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_project"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/SpinnerSelectProject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/TextViewSelectTaskList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_task_list"
+                android:textSize="16sp" />
+
+            <ListView
+                android:id="@+id/ListViewGroupTaskList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+
+            </ListView>
+
+            <Button
+                android:id="@+id/ButtonAddNewTaskList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_new_task_list" />
+        </LinearLayout>
+
+    </FrameLayout>

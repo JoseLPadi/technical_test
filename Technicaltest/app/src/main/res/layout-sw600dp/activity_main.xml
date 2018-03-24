@@ -3,11 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <fragment
-        android:id="@+id/fragment"
+        android:id="@+id/fragmentTaskList"
         android:name="com.josepadilla.technical_test.FragmentTaskListView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/FrameLayoutAddMultipleTask"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="?android:attr/detailsElementBackground" />
+
+
 </LinearLayout>
