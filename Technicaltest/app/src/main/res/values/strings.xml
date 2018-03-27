@@ -3,15 +3,14 @@
 
 
     <string name="select_project">Select project</string>
-    <string name="select_task_list">Select task list</string>
+    <string name="select_task_list">Select task</string>
 
     <string name="add_new_task_list">Add new task list</string>
     <string name="send_all_new_tasks">Send all new tasks to the task list selected</string>
     <string name="task_name">Task name</string>
     <string name="add">Add task</string>
     <string name="task_added">Task added</string>
-
-
+    <string name="title_activity_add_new_tasks">Add new tasks</string>
 
 
 </resources>

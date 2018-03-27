@@ -12,19 +12,24 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/TextViewTaskAdded"
+            android:id="@+id/TextViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="5dp"
             android:text="@string/task_added"
-            android:textSize="16sp" />
+            android:textColor="#3B93F7"
+            android:textSize="20sp" />
 
         <ListView
             android:id="@+id/ListViewNewTasks"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:clickable="false"
+            android:descendantFocusability="blocksDescendants"
+            android:focusableInTouchMode="false"
+            android:focusable="false"/>
 
         <Button
             android:id="@+id/ButtonSendAllTasks"
@@ -46,8 +51,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="@string/task_name" />
+                android:hint="@string/task_name"
+                android:inputType="textPersonName" />
 
             <Button
                 android:id="@+id/ButtonAddTask"

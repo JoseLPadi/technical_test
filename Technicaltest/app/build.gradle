@@ -21,20 +21,25 @@ android {
 dependencies {
 
 
-    compile "io.reactivex.rxjava2:rxjava:2.1.11"
-    compile 'info.android15.nucleus:nucleus:6.0.0'
+    implementation "io.reactivex.rxjava2:rxjava:2.1.11"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
 
-    compile 'com.squareup.retrofit2:retrofit:2.2.0'
-    compile 'com.google.code.gson:gson:2.6.2'
-    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'info.android15.nucleus5:nucleus:5.0.0-beta1'
+    implementation 'info.android15.nucleus5:nucleus-support-v7:5.0.0-beta1'
 
-    compile 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+
+    implementation 'com.android.support:design:26.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
 
-    compile 'frankiesardo:icepick:3.2.0'
-    provided 'frankiesardo:icepick-processor:3.2.0'
-
-
+    annotationProcessor 'frankiesardo:icepick:3.2.0'
+    //provided 'frankiesardo:icepick-processor:3.2.0'
+    implementation 'frankiesardo:icepick:3.2.0'
+    //provided 'frankiesardo:icepick-processor:3.2.0'
 
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
